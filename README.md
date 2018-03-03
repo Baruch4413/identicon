@@ -12,7 +12,7 @@ For integration with a symfony application, there is [BitverseIdenticonBundle](h
 Install using composer:
 
 ```
-$ composer require bitverse/identicon
+$ composer require Baruch4413/identicon
 ```
 
 ### Usage

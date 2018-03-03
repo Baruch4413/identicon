@@ -1,11 +1,11 @@
 {
-    "name": "bitverse/identicon",
+    "name": "Baruch4413/identicon",
     "description": "A PHP library for generating identicons.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Kuba Birecki",
-            "email": "kuba.birecki@bitverse.io"
+            "name": "Baruch Spinoza",
+            "email": "baruch.wolf@outlook.com"
         }
     ],
     "require": {
