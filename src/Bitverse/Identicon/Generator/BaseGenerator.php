@@ -21,6 +21,11 @@ abstract class BaseGenerator implements GeneratorInterface
     private $foregroundColor;
 
     /**
+     * @var Color
+     */
+    private $mainColor = '#ADADAD';
+
+    /**
      * {@inheritDoc}
      */
     public function setBackgroundColor($color)
@@ -73,9 +78,22 @@ abstract class BaseGenerator implements GeneratorInterface
      *
      * @return Color
      */
-    public function getColor($hash)
+    public function getColor($hash = '')
     {
+        if ( ! $hash ) return $this->mainColor;
         return Color::parseHex('#' . substr($hash, 0, 6));
+    }
+
+    /**
+     * Sets the main color of the image
+     *
+     * @param string $hash
+     *
+     * @return Color
+     */
+    public function setColor($hexColor)
+    {
+        return $this->mainColor = $hexColor;
     }
 
     /**
